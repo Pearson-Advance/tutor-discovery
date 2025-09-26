@@ -43,6 +43,7 @@ config: t.Dict[str, t.Dict[str, t.Any]] = {
         "ELASTICSEARCH_PORT": 9200,
         "ELASTICSEARCH_SCHEME": "http",
         "ELASTICSEARCH_HEAP_SIZE": "1g",
+        "UWSGI_BUFFER_SIZE": "8192",
     },
     "unique": {
         "MYSQL_PASSWORD": "{{ 8|random_string }}",
